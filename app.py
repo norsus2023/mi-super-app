@@ -40,7 +40,7 @@ with pestana1:
             with st.spinner("Analizando artículos y cruzando con tu catálogo..."):
                 try:
                     genai.configure(api_key=api_key)
-                    model = genai.GenerativeModel("gemini-1.5-flash")
+                    model = genai.GenerativeModel("gemini-1.5-flash-latest")
                     
                     imagen = Image.open(archivo_foto)
                     
