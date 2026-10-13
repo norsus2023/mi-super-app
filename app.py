@@ -11,8 +11,7 @@ st.title("🛒 Asistente de Compra Diaria")
 # Cargar catálogo desde el Excel
 @st.cache_data
 def cargar_datos():
-    df_cat = pd.read_excel("transcripcion_tickets_supermercado.xlsx", sheet_name="Catálogo Maestro Productos")
-    return df_cat
+  df_cat = pd.read_excel("transcripcion_tickets_supermercado.xlsx", sheet_name="Catálogo Maestro Productos", header=3)
 
 try:
     df_catalogo = cargar_datos()
